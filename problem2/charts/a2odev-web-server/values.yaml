@@ -1,0 +1,15 @@
+replicaCount: 1
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 64Mi
+
+hpa:
+  maxReplicas: 5
+  cpuTarget: 50
+  memoryTarget: 32Mi
+
+livenessProbe:
+  initialDelaySeconds: 60
+  periodSeconds: 60

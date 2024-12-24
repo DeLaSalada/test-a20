@@ -1,0 +1,6 @@
+releases:
+  - name: a2odev-web-server
+    namespace: a2odev-company
+    chart: ./charts/a2odev-web-server
+    values:
+      - ./charts/a2odev-web-server/values.yaml
